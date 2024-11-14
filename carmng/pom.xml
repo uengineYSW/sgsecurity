@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.posco.base</groupId>
+    <artifactId>posco-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.posco.carmng</groupId>
+  <artifactId>s20a01-carmng</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <spring-plugin.version>2.0.0.RELEASE</spring-plugin.version>
+    <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+    <spring-cloud-stream.version>Germantown.SR1</spring-cloud-stream.version>
+  </properties>
+  <modules>
+    <module>s20a01-domain</module>
+    <module>s20a01-store</module>
+    <module>s20a01-service</module>
+    <module>s20a01-boot</module>
+  </modules>
+</project>
